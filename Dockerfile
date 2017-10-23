@@ -15,7 +15,7 @@ RUN apt-get update -yq \
 # This line might seem extraneous since we are going to mount the code from
 # the wordstation. However this is also the production config, 
 ADD . /code
-WORKDIR /code
+WORKDIR /code 
 
 # Install our python dependencies
 RUN pip install -r requirements.txt
